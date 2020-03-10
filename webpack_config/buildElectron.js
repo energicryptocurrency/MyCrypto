@@ -49,16 +49,16 @@ async function build() {
         },
         mac: {
           category: 'public.app-category.finance',
-          icon: path.join(config.path.electron, 'icons/icon.icns'),
+          icon: path.join(config.path.electron, '/icons/icon.icns'),
           compression
         },
         win: {
-          icon: path.join(config.path.electron, 'icons/icon.ico'),
+          icon: path.join(config.path.electron, '/icons/icon.ico'),
           compression
         },
         linux: {
           category: 'Finance',
-          icon: path.join(config.path.electron, 'icons/icon.png'),
+          icon: path.join(config.path.electron, '/icons/icon.png'),
           compression
         },
         // IMPORTANT: Prevents from auto publishing to GitHub in CI environments
@@ -66,6 +66,7 @@ async function build() {
         // IMPORTANT: Prevents extending configs in node_modules
         extends: null
       }
+
     });
 
     console.info(`Electron builds are finished! Available at ${electronBuildsDir}`);
