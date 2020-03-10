@@ -19,7 +19,7 @@ interface StateProps {
 
 function OnboardingModal({ currentSlide }: StateProps) {
   const images = [chest, bankVsMyCrypto, vault, champagne];
-  const logoImage = <img src={logo} alt="Energi logo" />;
+  const logoImage = <img src={logo} alt="MyEnergiWallet logo" />;
   const slideImage = <img src={images[currentSlide - 1]} alt="Slide art" />;
   const slides = [
     <FirstSlide key={1} />,
